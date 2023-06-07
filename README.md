@@ -36,3 +36,63 @@ Create a jsconfig.json file on the root
     ]
 }
 ```
+
+## Misc
+
+### Random issue when initially pushing the first commit
+
+1. First, remove the incorrect remote URL by using the following command:
+
+```bash
+git remote remove origin
+```
+
+2. Add the correct remote URL:
+
+```bash
+git remote add origin https://github.com/NSM722/Cypress-Tests-Demo.git
+```
+
+3. Verify that the correct remote URL has been added by running the following command:
+
+```bash
+git remote -v
+```
+
+4. Finally, you can proceed with pushing your work using the corrected remote URL:
+
+```bash
+git push -u origin main
+```
+
+### Adding an SSH key to my local machine
+
+1. Run the following command on the terminal
+
+```bash
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+Replace "<your_email@example.com>" with the email associated with your GitHub account
+
+Press Enter to accept the default file location and passphrase (you can set a passphrase if you prefer, but it's not required)
+
+2. Add the SSH key to your GitHub account. Run the following command to copy the public key to your clipboard:
+
+```bash
+cat ~/.ssh/id_ed25519.pub | xclip -selection clipboard
+```
+
+3. Visit the "SSH and GPG keys" settings page in your GitHub account. You can find it at [SSH and GPG keys Link](https://github.com/settings/keys). Click on "New SSH key" or "Add SSH key" and paste the key from your clipboard into the provided field. Give it a descriptive title if desired, and click "Add SSH key" to save it
+
+4. Update the remote URL in your Git repository to use the SSH URL instead of the HTTPS URL. Run the following command:
+
+```bash
+git remote set-url origin git@github.com:NSM722/Cypress-Tests-Demo.git
+```
+
+5. You should now be able to push your work using the SSH authentication. Try running the following command:
+
+```bash
+git push -u origin main
+```
