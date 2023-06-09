@@ -2,6 +2,10 @@ describe('Create a post and mark or un-mark it as a favorite', () => {
 
     Cypress.config('pageLoadTimeout', 100000)
 
+    before(function () {
+       cy.LogIn()
+    })
+
     it('Create a post', () => {
         // find the menu bar as an alias to make it reusable
         cy.get('ul.navbar-nav').children().as('menu')
