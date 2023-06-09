@@ -96,3 +96,18 @@ git remote set-url origin git@github.com:NSM722/Cypress-Tests-Demo.git
 ```bash
 git push -u origin main
 ```
+
+### Project Configuration
+```js
+const { defineConfig } = require("cypress");
+
+module.exports = defineConfig({
+  e2e: {
+    baseUrl: 'https://react-redux.realworld.io',
+  },
+})
+```
+
+By setting up the above configuration, Cypress will automatically prepend this base URL to all the relative URLs you use with the cy.visit() command
+
+This way one doesn't need to specify the complete/full URL on every spec file

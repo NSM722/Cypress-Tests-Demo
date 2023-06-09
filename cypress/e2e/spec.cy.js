@@ -1,12 +1,6 @@
-/* describe('template spec', () => {
-  it('passes', () => {
-    cy.visit('https://example.cypress.io')
-  })
-}) */
-
 describe('login', () => {
   it('sign in', () => {
-      cy.visit('https://react-redux.realworld.io/#/login')
+      cy.visit('/#/login')
       // find the email address text box
       // and type the text to passed into it
       cy.get('input[type="email"]').type('477wl0@m.womenhack.com')

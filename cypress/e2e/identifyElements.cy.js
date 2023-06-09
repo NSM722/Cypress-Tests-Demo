@@ -2,7 +2,7 @@ describe('Create a post then be able to mark & un-mark it as favorite', () => {
     // login 
     it('User can log in', () => {
       // this link launches the application
-      cy.visit('https://react-redux.realworld.io/#/login')
+      cy.visit('/#/login')
       // verify the app title, title() returns the title of the current active page
       cy.title().should('eq', 'Conduit')
       // verify the protocol of the site is https:
