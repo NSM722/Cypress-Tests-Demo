@@ -2,9 +2,9 @@ describe('Create a post then mark and un-mark it as favorite', () => {
 
     Cypress.config('pageLoadTimeout', 100000)
 
-    /* before(function () {
-       cy.SignIn()
-    }) */
+    before(function () {
+       cy.LogIn()
+    })
 
     it('Create a post', () => {
         cy.get('ul.navbar-nav').children().contains('New Post').click()
