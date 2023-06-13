@@ -111,3 +111,9 @@ module.exports = defineConfig({
 By setting up the above configuration, Cypress will automatically prepend this base URL to all the relative URLs you use with the cy.visit() command
 
 This way one doesn't need to specify the complete/full URL on every spec file
+
+### Example of running a specific test file
+
+```bash
+npx cypress run --spec cypress/e2e/customs.cy.js 
+```
