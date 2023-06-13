@@ -1,3 +1,15 @@
 {
-  "cSpell.words": ["Favorited"]
+  "cSpell.words": [
+    "Favorited",
+    "libasound",
+    "libgbm",
+    "libgconf",
+    "libgtk",
+    "libnotify",
+    "libnss",
+    "libxss",
+    "libxtst",
+    "xauth",
+    "xvfb"
+  ]
 }
