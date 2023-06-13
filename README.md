@@ -117,3 +117,17 @@ This way one doesn't need to specify the complete/full URL on every spec file
 ```bash
 npx cypress run --spec cypress/e2e/customs.cy.js 
 ```
+
+By doing the above the `videos` and `screenshots` folders will be added to the project
+
+The **video** folder contains a record of the successful test run on the specific file
+
+If any tests were to fail they would be included in the **screenshots** folder
+
+**_To run the above test on a browser one would use the following command_**
+
+```bash
+npx cypress run --spec cypress/e2e/customs.cy.js --BROWSER FLAG-- --BROWSER NAME--
+
+npx cypress run --spec cypress/e2e/customs.cy.js --browser firefox
+```
