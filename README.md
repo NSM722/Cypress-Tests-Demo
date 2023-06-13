@@ -2,6 +2,8 @@
 
 [Demo Testing App](https://react-redux.realworld.io/#/login?_k=k38bj6 "follow link")
 
+[Tutorial Github Repo](https://github.com/Omnipotence8/QAMilestoneAcademy "follow link")
+
 Create a `package.json` dependencies file
 
 ```bash
