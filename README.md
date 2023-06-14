@@ -4,6 +4,8 @@
 
 [Tutorial Github Repo](https://github.com/Omnipotence8/QAMilestoneAcademy "follow link")
 
+[Best practices of selecting elements](https://docs.cypress.io/guides/references/best-practices#Selecting-Elements "read docs")
+
 Create a `package.json` dependencies file
 
 ```bash
