@@ -54,7 +54,7 @@ git remote remove origin
 2. Add the correct remote URL:
 
 ```bash
-git remote add origin https://github.com/NSM722/Cypress-Tests-Demo.git
+git remote add origin <REMOTE URL>
 ```
 
 3. Verify that the correct remote URL has been added by running the following command:
@@ -92,7 +92,7 @@ cat ~/.ssh/id_ed25519.pub | xclip -selection clipboard
 4. Update the remote URL in your Git repository to use the SSH URL instead of the HTTPS URL. Run the following command:
 
 ```bash
-git remote set-url origin git@github.com:NSM722/Cypress-Tests-Demo.git
+git remote set-url <SSH URL>
 ```
 
 5. You should now be able to push your work using the SSH authentication. Try running the following command:
